@@ -1,0 +1,1046 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 5, 2016, Aug 5, 2016 2:06:57 PM
+    Author     : Russ
+*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:375px iPhone6 Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:375px){
+    .mainSection {
+        .yellowBox {
+            img{
+                margin-left:-6em;
+            }
+        }
+        .secondLine{
+            left:7em;
+        }
+        .yellowBox-2{
+            img{
+                left:21em;
+            }
+        }
+        .thirdLine{
+            left:12em;
+        }
+        .yellowBox-3{
+            img{
+                margin-left:-5em;
+            }
+        }
+        .yellowBox-4{
+            img{
+                left:21em;
+            }
+        }
+        .oilDrop-1{
+            top:18.5em;
+        }
+        .oilDrop-2{
+            top:25em;
+        }
+        .aboutYellowBox{
+            @include span-columns(8);
+            @include shift(3);
+            
+            img{
+                margin-left:-9em;
+                
+            }
+        }
+        .aboutYellowBox-2{
+            @include span-columns(8);
+            @include shift(1);
+            height:20em;
+            img{
+                margin-left:20em;
+                top:-23em;
+            }
+        }
+    }//mainSection
+    
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:400px  iPhone6 Plus Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:400px){
+    .mainSection{
+        .yellowBox{
+            img{
+                margin-left:-7em;
+            }
+            P{
+                font-size: 1.1em;
+            }
+        }
+        .oilDrop3{
+            top:53em;
+        }
+        .yellowBox-2{
+            img{
+                left:23em;
+            }
+            p{
+                font-size: 1.1em;
+            }
+        }
+        .oilDrop-4{
+            top:64.5em;
+        }
+        .yellowBox-3{
+            img{
+                margin-left:-6em;
+            }
+            p{
+                margin-top:-11em;
+                font-size: 1.1em;
+            }
+        }
+        .oilDrop-5{
+            top:79.5em;
+        }
+        .oilDrop-6{
+            top:107.5em;
+        }
+        .yellowBox-4{
+            p{
+                font-size: 1.1em;
+            }
+            img{
+               left:24.5em; 
+            }
+        }
+        .aboutYellowBox{
+            @include span-columns(8);
+            @include shift(3);
+            p{
+                font-size: 1.1em;
+            }
+        }
+        .aboutYellowBox-2{
+            height:18em;
+            p{
+                font-size: 1.1em;
+                padding-right:5em;
+            }
+            img{
+                margin-left:22em;
+                top:-24em;
+            }
+        }
+        .aboutOilDrop-2{
+           top:23.5em; 
+        }
+        .aboutOilDrop-5{
+           top:87.5em; 
+        } 
+        .aboutOilDrop-6{
+           top:83.5em; 
+        } 
+    }//mainSection
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:568px   iPhone5 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:568px){
+    .logo{
+        @include span-columns(4);
+        @include shift(4);
+        
+    }
+    .oilDripLeft, .oilDripRight{
+        img{
+            width:9px;
+        }
+    }
+    .mainSection{
+        .subHeader{
+            padding:0 2em; 
+            h2{
+                font-size:2.5em;
+                margin-top: 1.2em;
+            }
+        }
+        .topLine{
+            margin-top:3em;
+            right:17em;
+        }
+        .oilDrop-1{
+            left:5.5%;
+            top:23.5em;
+            img{
+                width:9px;
+            }
+        }
+        .oilDrop-2{
+            right:6%;
+            top:30em;
+            img{
+                width:9px; 
+            }
+        }
+        .yellowBox{
+            @include span-columns(6);
+            @include shift(4);
+            height:11em;
+            margin-top:-9em;
+            img{
+                width:60%;
+                top:-6em;
+                margin-left:-8.5em;
+            }
+            p{
+                padding-left:8em;
+            }
+        }
+        .secondLine{
+            left:13em;
+            top:-3em;
+        }
+        .oilDrop-3{
+            top:56em;
+            img{
+                width:9px;
+            }
+        }
+        .yellowBox-2{
+            @include span-columns(6);
+            @include shift(2);
+            height:9em;
+            margin-top:-4em;
+            img{
+                width:60%;
+                left:22em;
+                top:-15em;
+            }
+        }
+        .oilDrop-4{
+            top:77.5em;
+            img{
+                width:9px;
+            }
+        }
+        .thirdLine{
+            left:25em;
+            top:-2em;
+        }
+        .yellowBox-3{
+            @include span-columns(6);
+            @include shift(5);
+            margin-top:-3em;
+            p{
+                margin-top:-15em;
+                padding: .5em 2em 0 9em;
+            }
+            img{
+                width:60%;
+                top:-9em;
+                margin-left:-9em;
+            }
+        }
+        .oilDrop-5{
+            top:89.5em;
+            img{
+                width:9px;
+            }
+        }
+        .fourthLine{
+            left:7em;
+            top:-2em;
+        }
+        .oilDrop-6{
+            right:9%;
+            img{
+                width:9px;
+            }
+        }
+        .yellowBox-4{
+            @include span-columns(6);
+            @include shift(1);
+            margin-top:-2em;
+            img{
+                width:60%;
+                top:-14em;
+                left:20.5em;
+            }
+        }
+        .fifthLine{
+            top:-11em;
+            left:27em;
+            margin-bottom:-8em;
+        }
+        
+        .aboutYellowBox{
+            @include span-columns(6);
+            @include shift(4);
+            margin-top:-14em;
+            height:19em;
+            img{
+                margin-left:-15em;
+                top:-7em;
+            }
+        }
+        .aboutSecondLine{
+            margin-top:0;
+            top:-4em;
+            left:15em;
+        }
+        .aboutYellowBox-2{
+            @include span-columns(7);
+            @include shift(3);
+            margin-top:-10em;
+            img{
+                margin-left: 28em;
+                top: -20em;
+                width:38%;
+            }
+        }
+        .aboutThirdLine{
+            left:30em;
+            top:-11em;
+            margin-bottom:-7em;
+        }
+        .aboutOilDrop-1{
+            left:4%;
+            img{
+                width:9px;
+            }
+        }
+        .aboutOilDrop-2{
+            right:8%;
+            img{
+                width:9px;
+            }
+        }
+        .aboutOilDrop-3{
+            left:9%;
+            top:51.5em;
+            img{
+                width:9px;
+            }
+        }
+        .aboutOilDrop-4{
+            right:3%;
+            img{
+                width:9px;
+            }
+        }
+        .aboutOilDrop-5{
+            top:83.5em;
+            img{
+                width:9px;
+            }
+        }
+        .aboutOilDrop-6{
+            top:76.5em;
+            right:5%;
+            img{
+                width:9px;
+            }
+        }
+    }//mainSection
+    .page-template-about-page{
+        margin:1px;
+        .mainSection{
+            .subHeader{
+                h2{
+                    margin-top:.5em;
+                }
+            }
+        }
+    }
+    .footer{
+        .lowerFooter{
+            height:10em;
+            p{
+              @include span-columns(8);
+              @include shift(1);
+              margin-top:1em;
+              a{
+                  margin-left:1em;
+              }
+            }
+            .leftFooter{
+                
+                float:left;
+                clear:none;
+                margin-left:0;
+            }
+            .rightFooter{
+                
+                float:left;
+                clear:none;
+                margin-left:0;
+            }
+            .socialContainer{
+                @include span-columns(3);
+                @include omega();
+                float:left;
+                clear:none;
+                margin-left:0;
+                .footerSocials{
+                    a{
+                        margin-right:.2em;
+                    }
+                }
+            }
+            p.copyright{
+                width:100%;
+                margin-left:0;
+            }
+        }
+    }//footer
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:660px iPhone6 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:660px){
+    .mainSection{
+        .subHeader{
+            h2{
+                padding:0 1em;
+            }
+        }
+        .topLine{
+            right:27em;
+        }
+        .yellowBox{
+            height:12em;
+            img{
+               top:-9em;
+               margin-left:-11.5em;
+               
+            }
+            p{
+                font-size: 1.2em;
+                padding-left:10em;
+            }
+        }
+        .secondLine{
+            left:16em;
+        }
+        .yellowBox-2{
+            height:11em;
+            p{
+                font-size: 1.2em;
+                padding: .5em 8em .5em 1em;
+            }
+            img{
+                left: 23em;
+                top: -18em;
+            }
+        }
+        .oilDrop-3{
+            top:68em;
+        }
+        .oilDrop-4{
+            top: 86.5em;
+        }
+        .yellowBox-3{
+            height:7em;
+            
+            p{
+                font-size:1.2em;
+                margin-top:-16em;
+                padding: .5em 2em 0 11em;
+            }
+            img{
+                
+            }
+        }
+        .oilDrop-6 {
+            top: 136.5em;
+        }
+        .oilDrop-5 {
+            top: 103.5em;
+        }
+        .yellowBox-4{
+            height:5em;
+            p{
+                font-size:1.2em;
+            }
+            img{
+                left:24.5em;
+            }
+        }
+        .fifthLine{
+            left:33em;
+        }
+        .aboutYellowBox{
+            
+            p{
+               font-size:1.2em; 
+               padding-left:3em;
+            }
+        }
+        .aboutYellowBox-2{
+            p{
+                font-size:1.2em;
+            }
+            img{
+                margin-left: 34em;
+                top: -21em;
+                width: 31%;
+            }
+        }
+        .aboutOilDrop-5{
+            top:93.5em;
+        }
+        .aboutOilDrop-6{
+            top:86.5em;
+        }
+        
+    }//mainSection
+    .footer{
+        .lowerFooter{
+            p{
+                font-size:1.5em;
+                
+            }
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:736px   iPhone6 Plus Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:736px){
+    .mainSection{
+        .subHeader{
+            h2{
+                padding:0 2em;
+            }
+        }
+        .oilDrop-2{
+            top:35em;
+        }
+        .oilDrop-3{
+            top:73em;
+        }
+        .yellowBox{
+            height:13em;
+            p{
+                font-size:1.3em;
+                padding-right:1.5em;
+            }
+        }
+        .yellowBox-2{
+            p{
+                font-size:1.3em;
+                padding-right:9em;
+            }
+            img{
+                left:26em;
+                top:-21em;
+            }
+        }
+        .oilDrop-4{
+            top:93.5em;
+        }
+        .yellowBox-3{
+            p{
+                font-size: 1.3em;
+                margin-top:-16.5em;
+            }
+        }
+        .oilDrop-5{
+            top:115.5em;
+        }
+        .yellowBox-4{
+            p{
+                font-size: 1.3em;
+            }
+            img{
+                top:-17em;
+                left:27.5em;
+            }
+        }
+        .fifthLine{
+            top:-14em;
+            left:36em;
+            margin-bottom:-11em;
+        }
+        .aboutYellowBox{
+            height:22em;
+            p{
+                font-size: 1.3em;
+            }
+            img{
+                margin-left: -18em;
+                top: -9em;
+            }
+        }
+        .aboutSecondLine{
+            left:21em;
+        }
+        .aboutYellowBox-2{
+            @include span-columns(7);
+            @include shift(2);
+            height:20em;
+            p{
+                font-size:1.3em;
+            }
+            img{
+                margin-left: 37em;
+                top: -22em; 
+            }
+        }
+        .aboutOilDrop-2{
+            right:6%;
+        }
+        .aboutOilDrop-3{
+            top:66.5em;
+        }
+        .aboutOilDrop-4{
+            top:50.5em;
+        }
+        .aboutOilDrop-5{
+            top:106.5em;
+        }
+        .aboutOilDrop-6{
+            top:98.5em;
+        }
+    }//mainSection
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:768px iPad Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:768px){
+    .header{
+        height:14em;
+        logo{
+           padding: 0 3em; 
+        }
+    }
+    .oilDripLeft{
+        top:13em;
+    }
+    .oilDripRight{
+        top:13em;
+    }
+    nav{
+        ul.upper-menu{
+            @include span-columns(10);
+            @include shift(1);
+            display:flex;
+            justify-content: space-around;
+            margin-top:1em;
+            padding:0 4em;
+            li{
+                float:left;
+                a{
+                    color:#fff;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    .menu{
+        display:none;
+    }
+    .nav li.current-menu-item>a, .nav li a:hover {
+        color: $mob-yellow;
+    }
+     .mainSection{
+         .oilDrop-1{
+            left:4.5%;
+            top:27.5em;
+        }
+        .oilDrop-2{
+            top:41em;
+        }
+        .oilDrop-3{
+            top:77em;
+        }
+        .yellowBox{
+            height:14em;
+            p{
+                font-size:1.4em;
+                padding-right:1em;
+            }
+        }
+        .secondLine{
+            top:-5em;
+        }
+        .yellowBox-2{
+            height:13em;
+            margin-top:-8em;
+            p{
+                font-size:1.4em;
+                padding-right:8em;
+            }
+        }
+        .oilDrop-4{
+            top:98.5em;
+        }
+        .thirdLine{
+            left:33em;
+        }
+        .yellowBox-3{
+            height:8em;
+            p{
+                font-size:1.4em;
+                margin-top:-16em;
+            }
+        }
+        .oilDrop-5{
+            top:120.5em;
+        }
+        .fourthLine{
+            top:-6em;
+            left:11em;
+        }
+        .yellowBox-4{
+            height:6em;
+            margin-top:-11em;
+            p{
+                font-size: 1.4em;
+            }
+            img{
+                left:29.5em;
+            }
+        }
+        .fifthLine{
+           left:39em; 
+        }
+        .aboutYellowBox{
+            margin-top:-19em;
+            height:25em;
+            p{
+                font-size:1.4em;
+            }
+        }
+        .aboutYellowBox-2{
+            height:23em;
+            p{
+                font-size:1.4em;
+            }
+        }
+        .aboutOilDrop-1{
+            left:2.5%;
+            top:41.5em;
+        }
+        .aboutOilDrop-4{
+            top:53.5em;
+        }
+        .aboutOilDrop-5{
+            top:114.5em;
+        }
+        .aboutOilDrop-6{
+            top:105.5em;
+        }
+    }//mainSection
+    .footer{
+        .upperFooter{
+            margin-bottom:-1px;
+        }
+        .lowerFooter{
+            height:12em;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1024px       ipad Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1024px){
+    .logo{
+        padding:0 7em;
+    }
+    nav{
+        ul.upper-menu{
+            li{
+                a{
+                    font-size:2em;
+                }
+            }
+        }
+    }
+    .oilDripLeft, .oilDripRight{
+        img{
+            width:16px;
+            margin-left:10px;
+        }
+    }
+    .mainSection{
+        .subHeader{
+            h2{
+                font-size: 3.5em;
+            }
+        }
+         .oilDrop-1{
+            top:27.5em;
+        }
+        .topLine{
+            right:15em;
+        }
+        .oilDrop-1{
+            top:31.5em;
+            left:5.5%;
+            img{
+                width:16px;
+            }
+        }
+        .oilDrop-2{
+            top:44em;
+            img{
+                width:16px;
+                
+            }
+        }
+        .yellowBox{
+            height:16em;
+            p{
+                font-size:1.4em;
+                font-size: 1.6em;
+                padding-right:3em;
+                padding-left:12em;
+            }
+            img{
+                width:56%;
+                top:-12em;
+                margin-left:-14.5em;
+            }
+        }
+        .secondLine{
+            left:24em;
+            img{
+                width:25.32%;
+            }
+        }
+        .yellowBox-2{
+            height:14em;
+            p{
+               font-size: 1.6em; 
+               padding-right:11em;
+               padding-left:2em;
+            }
+            img{
+                width:56%; 
+                left: 37em;
+                top: -27em;
+            }
+        }
+        .oilDrop-3{
+            top:87em;
+            img{
+                width:16px;
+            }
+        }
+        .oilDrop-4{
+            top:110.5em;
+            img{
+                width:16px;
+            }
+        }
+        .thirdLine{
+            left:44em;
+            img{
+                width:24.61%;
+            }
+        }
+        .yellowBox-3{
+            @include span-columns(6);
+            @include shift(4);
+            height:10em;
+            p{
+                font-size: 1.6em;
+                margin-top:-55%;
+                padding-left:15em;
+            }
+            img{
+                width:56%;
+                top:-15em;
+                margin-left:-14em;
+            }
+        }
+        .oilDrop-5{
+            top:127.5em;
+            img{
+                width:16px;
+            }
+        }
+        .fourthLine{
+            left:21em;
+            img{
+                width:57.58%;
+            }
+        }
+        .oilDrop-6{
+            top:154.5em;
+            img{
+                width:16px;
+            }
+        }
+        .yellowBox-4{
+            height:7em;
+            p{
+                font-size:1.6em;
+                padding-right:10em;
+            }
+            img{
+                width:56%;
+                left:39.5em;
+                top:-22em;
+            }
+        }
+        .fifthLine{
+            left:51em;
+            top:-25em;
+            img{
+                width:62,88%;
+            }
+        }
+        .aboutYellowBox{
+            @include span-columns(5);
+            @include shift(5);
+            height:28em;
+            p{
+                font-size: 1.6em;
+            }
+            img{
+                margin-left:-27em;
+                top:-12em;
+                width:90%;
+            }
+            
+        }
+        .aboutSecondLine{
+            left:38em;
+            img{
+                width:24.61%
+            }
+        }
+        .aboutYellowBox-2{
+            height:26em;
+            p{
+                font-size: 1.6em;
+                padding-right:10em;
+            }
+            img{
+                margin-left:52em;
+                top:-30em;
+            }
+        }
+        .aboutThirdLine{
+            left:48em;
+            img{
+               width:63.88% 
+            }
+        }
+        .aboutOilDrop-1{
+            img{
+                width:16px;
+            }
+        }
+        .aboutOilDrop-2{
+            top:36.5em;
+            img{
+                width:16px;
+            }
+        }
+        .aboutOilDrop-3{
+            top:82.5em;
+            img{
+                width:16px;
+            }
+        }
+        .aboutOilDrop-4{
+            top:64.5em;
+            img{
+                width:16px;
+            }
+        }
+        .aboutOilDrop-5{
+            top:129.5em;
+            img{
+                width:16px;
+            }
+        }
+        .aboutOilDrop-6{
+            top:117.5em;
+            img{
+                width:16px;
+            }
+        }
+    }//mainSection
+    .page-template-about-page{
+        .mainSection{
+            .subHeader{
+                margin-bottom: 4em;
+            }
+        }
+    }
+    .footer{
+        .lowerFooter{
+            height:13em;
+            p{
+                font-size: 2em;
+            }
+            .socialContainer{
+                .footerSocials{
+                    a{
+                        font-size:4em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1200x
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1200px){
+    .mainSection{
+        @include outer-container;
+        .aboutYellowBox-2{
+            p{
+                padding-right:13em;
+            }
+            img{
+                margin-left:61em;
+                top:-31em;
+            }
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1240px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1240px){
+    
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+
+}
+
+
+
+
+

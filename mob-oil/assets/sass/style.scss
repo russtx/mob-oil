@@ -1,0 +1,776 @@
+/*!
+	Theme Name: Mob-Oil
+	Theme URI: http://toplinemediateam.com
+	Description: Mob-Oil Theme
+	Version: 1.4.3
+	Author: Russ Berge
+	Author URI: hhttp://toplinemediateam.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*------------------------------------*\
+    Imports
+\*------------------------------------*/
+
+@import "assets/sass/bourbon/bourbon.scss";
+
+@import "assets/sass/neat/neat.scss";
+
+@import 'mobile-menu.scss';
+
+@import 'variables.scss';
+
+@import "base/base";
+
+@import "assets/sass/font-awesome-4.7.0/scss/font-awesome.scss";
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font-family:"Dolce Vita Heavy Bold"; 
+	color:#000;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+.clearfix{
+    clear:both;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	
+	width:100%;
+	margin:0;
+	position:relative;
+        overflow: hidden;
+}
+/* header */
+.header {
+    background:$oil-black;
+    height:10em;
+}
+/* logo */
+.logo {
+   @include span-columns(6); 
+   @include shift(3);
+   margin-top:2em;
+   img{
+       width:18em;
+   }
+}
+
+/* nav */
+.upper-menu{
+    display:none;
+}
+.lower-menu{
+    display: none;
+}
+.farLeft{
+    margin-left: -9999px;
+    display: inherit;
+    height: 0px
+}
+
+nav input[type="checkbox"]{
+    display:none;
+}
+
+
+nav input[type="checkbox"]{
+    display:none;
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+    
+    .upperFooter{
+        @include span-columns(12);
+        background:url(./assets/images/footer-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 2em;
+        
+    }
+    .lowerFooter{
+        @include span-columns(12);
+        background:$oil-black;
+        height:12em;
+        .leftFooter{
+            @include span-columns(6);
+            @include shift(3);
+            clear: both;
+        }
+        .rightFooter{
+            @include span-columns(6);
+            @include shift(3);
+            clear: both;
+        }
+        .socialContainer{
+            @include span-columns(6);
+            @include shift(3);
+            display:flex;
+            justify-content: space-around;
+            .footerSocials{
+                a{
+                    color:$yellow;
+                    font-size: 3em;
+                }
+            
+            }
+        }
+        p{
+            @include span-columns(12);
+            color:#fff;
+            font-size:1.3em;
+            text-align:center;
+            span{
+                a{
+                    color:#fff;
+                }
+            }
+            a{
+                color:#fff;
+            }
+        }
+        p.copyright{
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+.oilDripLeft{
+    position: absolute;
+    top: 9em;
+    left:4px;
+    img{
+        float:left;
+        width:5px;
+        margin-left:5px;
+            
+    }
+    img:nth-child(1){
+        margin-left:0;
+    }
+    img:nth-child(4){
+        margin-top:-6px;
+    }
+}
+.oilDripRight{
+    position: absolute;
+    top: 9em;
+    right:4px;
+    img{
+        float:left;
+        width:5px;
+        margin-left:5px;
+    }
+    img:nth-child(2){
+        margin-top:-6px;
+    }
+}
+.mainSection{
+    //overflow:hidden;
+    .subHeader{
+        @include span-columns(6);
+        @include shift(3);
+        h2{
+            text-align: center;
+            color:$text-red;
+            margin-top:2em;
+            font-family:"Dolce Vita Heavy Bold"; 
+            font-size: 1.5em;
+        }
+    }
+    .oilDrop-1{
+        position: absolute;
+        left: 7%;
+        top: 19.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-2{
+        position: absolute;
+        right: 7%;
+        top: 23em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .topLine{
+        display: block;
+        position: relative;
+        margin-top:1em;
+        right:8em;
+    }
+    
+    .yellowBox{
+        @include span-columns(9);
+        @include shift(2);
+        position: relative;
+        background:$yellow;
+        height:10em;
+        z-index:99;
+        margin-top:-2em;
+        
+        img{
+            display:block;
+            position:relative;
+            width:40%;
+            z-index: 999;
+            float:left;
+            top: -4em;
+            margin-left: -5em;
+        }
+        p{
+            padding:.5em 1em .5em 6em;
+        }
+    }
+    .secondLine{
+        display: block;
+        position: relative;
+        left:5em;
+        z-index:10;
+        img{
+            width:31.61%;
+        }
+    }
+    .yellowBox-2{
+        @include span-columns(9);
+        @include shift(1);
+        position: relative;
+        background:$yellow;
+        height:10em;
+        z-index:99;
+        margin-top:0em;
+        p{
+            padding:.5em 6em .5em 1em;
+        }
+        img{
+            display:block;
+            position:relative;
+            width:40%;
+            z-index: 999;
+            top: -12em;
+            left: 17em;
+            
+        }
+    }
+    .oilDrop-3{
+        position: absolute;
+        left: 9%;
+        top: 44em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-4{
+        position: absolute;
+        right: 5%;
+        top: 55.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-5{
+        position: absolute;
+        left: 3%;
+        top: 67.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .thirdLine{
+        display: block;
+        position: relative;
+        left:10em;
+        z-index:10;
+        img{
+            width:31.61%;
+        }
+    }
+    .yellowBox-3{
+        @include span-columns(9);
+        @include shift(2);
+        position: relative;
+        background:$yellow;
+        height:6em;
+        z-index:99;
+        
+        p{
+            padding:.5em 1em .5em 6em;
+            margin-top:-9em;
+        }
+        img{
+            display:block;
+            position:relative;
+            width:40%;
+            z-index: 999;
+            top: -3em;
+            margin-left: -4em;
+            
+        }
+    }
+    .oilDrop-6{
+        position: absolute;
+        right: 3%;
+        top: 90.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .fourthLine{
+        display: block;
+        position: relative;
+        margin-top:-2em;
+        left:4em;
+        z-index:10;
+        img{
+            width:73.58%;
+        }
+    }
+    .yellowBox-4{
+        @include span-columns(9);
+        @include shift(1);
+        position: relative;
+        background:$yellow;
+        height:4em;
+        z-index:99;
+        margin-top:0em;
+        p{
+            padding:.5em 6em .5em 1em;
+            margin-top:0em;
+        }
+        img{
+            display:block;
+            position:relative;
+            width:40%;
+            z-index: 999;
+            top: -9em;
+            left: 19em;
+            
+        }
+    }
+    .fifthLine{
+        display: block;
+        position: relative;
+        top:-2em;
+        left:23em;
+        z-index:10;
+        
+        img{
+            width:79.88%;
+        }
+    }
+    .aboutYellowBox{
+        @include span-columns(9);
+        @include shift(2);
+        position: relative;
+        background:$yellow;
+        height:16em;
+        z-index:99;
+        margin-top:-7em;
+        img{
+            display:block;
+            position:relative;
+            width:75%;
+            z-index: 999;
+            float:left;
+            top: -2em;
+            margin-left: -5em;
+        }
+        p{
+            padding:1em 1em 1.5em 1em;
+        }
+    }
+    .aboutSecondLine{
+        display: block;
+        position: relative;
+        left:10em;
+        z-index:10;
+        margin-top:4em;
+        img{
+            width:31.61%;
+        }
+    }
+    .aboutYellowBox-2{
+        @include span-columns(9);
+        @include shift(1);
+        position: relative;
+        background:$yellow;
+        height:22em;
+        z-index:99;
+        margin-top:-2em;
+        img{
+            display:block;
+            position:relative;
+            width:48%;
+            z-index: 999;
+            float:left;
+            top: -21em;
+            margin-left: 17em;
+        }
+        p{
+            padding:1em 8em 1.5em 1em;
+            
+        }
+    }
+    .aboutThirdLine{
+        display: block;
+        position: relative;
+        top:-2em;
+        left:9em;
+        z-index:10;
+        
+        img{
+            width:79.88%;
+        }
+    }
+    .aboutOilDrop-1{
+        position: absolute;
+        left: 5%;
+        top: 27.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .aboutOilDrop-2{
+        position: absolute;
+        right: 3%;
+        top: 19.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .aboutOilDrop-3{
+        position: absolute;
+        left: 12%;
+        top: 47.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .aboutOilDrop-4{
+        position: absolute;
+        right: 10%;
+        top: 39.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .aboutOilDrop-5{
+        position: absolute;
+        left: 3%;
+        top: 82.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .aboutOilDrop-6{
+        position: absolute;
+        right: 14%;
+        top: 78.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    
+}//mainSection
+.priceSection{
+    @include span-columns(8);
+    @include shift(2);
+    font-family:"LeagueGothic-Regular";
+    .priceContent{
+        margin-top:1em;
+        height:10em;
+        .leftPrice{
+            @include span-columns(5 of 8);
+            h2{
+                text-transform: uppercase;
+                font-size: 1.5em;
+                margin-bottom: -.2em;
+            }
+            p{
+                font-family: 1.5em;
+                line-break: 1.2em;
+            }
+        }
+        .rightPrice{
+           @include span-columns(3 of 8);
+           padding: 0 5px;
+           span.price{
+                background: $mob-yellow;
+                width: 100%;
+                display: block;
+                padding-left:7px;
+                color:$text-red;
+                font-size: 4.5em;
+                
+                span.cents{
+                    font-size: .5em;
+                    vertical-align: text-top;
+                    border-bottom: 2px solid #fff;
+                }
+           }
+        }
+        .bottomContent{
+            .leftBottom{
+                @include span-columns(5 of 8);
+                p{
+                    color:$text-red;
+                }
+            }
+            .rightBottom{
+                @include span-columns(3 of 8);
+            }
+        }
+    }//priceContent    
+}
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+/*-----------------------------------------------------------------------------*/
+@import 'responsive.scss';

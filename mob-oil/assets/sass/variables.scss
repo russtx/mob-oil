@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 17, 2016, 12:27:51 PM
+    Author     : Russ
+*/
+
+// COLORS
+$yellow:rgb(251, 186, 21);
+$mob-yellow:rgb(252, 186, 18);
+$trans-yellow:rgba(252, 186, 18, .8);
+$text-red:rgb(164, 30, 33);
+$oil-black:rgb(19,22,27);
+
+
+
+//FONTS
+
+@font-face {
+	font-family:"Dolce Vita Heavy Bold"; 
+	src: url(./assets/fonts/Dolce_Vita_Heavy_Bold.ttf);  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family:"LeagueGothic-Regular"; 
+	src: url(./assets/fonts/LeagueGothic-Regular.otf);  
+	font-weight: normal;  
+}
