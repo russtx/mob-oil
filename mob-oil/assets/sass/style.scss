@@ -563,11 +563,11 @@ nav input[type="checkbox"]{
             h2{
                 text-transform: uppercase;
                 font-size: 1.5em;
-                margin-bottom: -.2em;
+                margin-bottom: -.5em;
             }
             p{
-                font-family: 1.5em;
-                line-break: 1.2em;
+                font-size: 1.2em;
+                line-height: 1.2em;
             }
         }
         .rightPrice{
@@ -586,21 +586,263 @@ nav input[type="checkbox"]{
                     vertical-align: text-top;
                     border-bottom: 2px solid #fff;
                 }
+                
+           }
+           span.extra{
+               float:right;
+               font-size: 1.1em;
            }
         }
-        .bottomContent{
-            .leftBottom{
-                @include span-columns(5 of 8);
-                p{
-                    color:$text-red;
-                }
+        
+    }//priceContent    
+    .bottomContent{
+        padding:1px;
+        .leftBottom{
+            @include span-columns(5 of 8);
+            p{
+                color:$text-red;
+                letter-spacing: .5px;
+                font-size: 1.2em;
             }
-            .rightBottom{
-                @include span-columns(3 of 8);
+            p:nth-child(2){
+                margin-top:-1em;;
             }
         }
-    }//priceContent    
+        .rightBottom{
+            @include span-columns(3 of 8);
+            button{
+                border:solid 1px $mob-yellow;
+                background:$mob-yellow;
+                color:$text-red;
+                padding: 5px 2px;
+                border-radius: 0;
+                font-size: .8em;
+            }
+        }
+    }
+}//priceSection
+.page-template-price-page, .page-template-schedule-page, .page-template-template-demo, .page-template-prevent-page, .page-template-contact-page{
+    .oilDrop-1{
+        position: absolute;
+        left: 7.5%;
+        top: 19.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-2{
+        position: absolute;
+        right: 9%;
+        top: 20.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-3{
+        position: absolute;
+        left: 3%;
+        top: 29.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-4{
+        position: absolute;
+        right: 6%;
+        top: 25.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-5{
+        position: absolute;
+        left: 7%;
+        top: 50.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+    .oilDrop-6{
+        position: absolute;
+        right: 3%;
+        top: 42.5em;
+        z-index: 999;
+        img{
+            width:5px;
+        }
+    }
+}//price-page
+.page-template-schedule-page{
+    .scheduleContent{
+        display:block;
+        width:65%;
+        margin:0 auto;
+        .gform_wrapper{
+            
+            background:$mob-yellow;
+            padding:02em;
+            
+            label.gfield_label, label#input_1_1_1_label, label#input_1_1_2_label, label#input_1_1_3_label, label#input_1_1_4_label, label#input_1_1_5_label, input_1_14_1 {
+                display:none;
+            }
+            .field_sublabel_below div[class*=gfield_time_].ginput_container label{
+                display: none;
+            }
+        }
+        
+    }
+    .lowerSchedule{
+        h4{
+            text-align: center;
+            color:$text-red;
+            padding:0 2em;
+        }
+    }
+}//schedule-page
+.page-template-prevent-page{
+    .mainSection{
+        .mainContent{
+            display: block;
+            margin:0 0 10% 22%;
+            width:65%;
+            background:$mob-yellow;
+            span{
+                font-family:"LeagueGothic-Regular";
+                display: block;
+                padding:1em 1em 1em 3em;
+                margin-top:-4em;
+                font-size: 1.3em;
+                p{
+                    
+                }
+                ul{
+                    padding-left:2em;
+                    li{
+                       list-style: initial; 
+                       
+                    }
+                }
+            }
+            img{
+                width: 5.5em;
+                margin-left: -3em;
+                margin-top: -1em;
+            }
+            
+        }
+    }
+}//preventative page
+.page-template-contact-page{
+    .mainSection{
+        .contactContent{
+            display:block;
+            width:65%;
+            margin:1em auto 0em auto;
+            background:$mob-yellow;
+            
+            .contactLeft{
+                span.guy{
+                    display:block;
+                    width:12em;
+                    
+                    margin-left:-4em;
+                    float:left;
+                    img{
+                        margin-top:-2em;
+                        
+                    }
+                }
+                span.contactPhone{
+                    margin-top: 0em;
+                    display: block;
+                    float: right;
+                    padding: 2em 4em 0 0em;
+                    a{
+                        color:#000;
+                    }
+                }
+                span.contactSocials{
+                    ul{
+                        float:right;
+                        padding-right:4em;
+                        li{
+                            
+                            a{
+                                color:#000;
+                                .fa{
+                                    font-size: 4em;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }//contactLeft
+            .contactForm{
+                clear:both;
+                padding:0 2em;
+                .gform_wrapper{
+                    .top_label{
+                        div.ginput_container{
+                            margin-top:-24px;
+                        }
+                    }
+                }
+            }
+        }//contactContent
+        .triangle{
+            float:right;
+            padding-right:3em;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 50px 50px 0;
+            border-color: transparent $mob-yellow transparent transparent;
+            margin-top: -16px;
+            margin-bottom: 4em;
+            margin-right: 17.5%;
+        }
+    }
 }
+
+/*------------------------------------*\
+    Gravity Forms
+\*------------------------------------*/
+/* gform placeholders*/
+::-webkit-input-placeholder { color:$text-red; }
+:-moz-placeholder { opacity: 1; color:$text-red; } /* Firefox 18- */
+::-moz-placeholder { opacity: 1; color:$text-red; } /* firefox 19+ */
+:-ms-input-placeholder { color:$text-red; } /* ie */
+input:-moz-placeholder { color:$text-red; }
+
+.gform_wrapper{
+    font-family:"LeagueGothic-Regular";
+    font-size:1.1em;
+    .gform_heading{
+        display:none;
+    }
+    select{
+        color:$text-red;
+    }
+    h3{
+        font-family:"LeagueGothic-Regular";
+        text-align: center;
+        font-size: 2.5em;
+    }
+    button, [type='button'], [type='reset'], [type='submit']{
+        background:#fff;
+        color:#000;
+        border:solid 2px $mob-yellow;
+        border-radius:0;
+    }
+}
+
+
 
 /*------------------------------------*\
     IMAGES

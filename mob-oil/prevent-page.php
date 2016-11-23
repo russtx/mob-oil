@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Demo Page Template */
+/* Template Name: Preventative Maintenence Page */
 get_header(); ?>
 
         <div class="oilDripLeft">
@@ -49,9 +49,11 @@ get_header(); ?>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<?php the_content(); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class('mainContent'); ?>>
+                                
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/engine.png" alt="Engine-light" >
+                            
+                                <span><?php the_content(); ?></span>
 
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 

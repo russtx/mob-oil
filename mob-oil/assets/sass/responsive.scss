@@ -353,12 +353,69 @@ and open the template in the editor.
             }
         }
     }//mainSection
+    .page-template-price-page, .page-template-schedule-page, .page-template-template-demo, .page-template-prevent-page,.page-template-contact-page{
+        .oilDrop-1{
+            top: 20.5em;
+            img{
+                width:9px;
+            }
+        }
+        .oilDrop-2{
+            top: 24.5em;
+            img{
+                width:9px;
+            }
+        }
+        .oilDrop-3{
+            top: 33.5em;
+            img{
+                width:9px;
+            }
+        }
+        .oilDrop-4{
+           top: 29.5em;
+           img{
+                width:9px;
+            } 
+        }
+        .oilDrop-5{
+            top: 54.5em;
+            img{
+                width:9px;
+            }           
+        }
+        .oilDrop-6{
+            top: 46.5em;
+            img{
+                width:9px;
+            }
+        }
+    }
     .page-template-about-page{
         margin:1px;
         .mainSection{
             .subHeader{
                 h2{
                     margin-top:.5em;
+                }
+            }
+        }
+    }
+    .priceSection{
+        @include span-columns(6);
+        @include shift(3);
+        .priceContent{
+            .leftPrice{
+                @include span-columns(4 of 6);
+                p{
+                    font-size: 1.4em;
+                    padding-right: 2em;
+                }
+            }
+            .rightPrice{
+                @include span-columns(2 of 6);
+                span.price{
+                    font-size: 5em;
                 }
             }
         }
@@ -404,6 +461,66 @@ and open the template in the editor.
             }
         }
     }//footer
+    .page-template-prevent-page{
+        .mainSection{
+            .mainContent{
+                img{
+                    width:8.5em;
+                    margin-left:-6em;
+                }
+                span{
+                    font-size:1.5em;
+                }
+            }
+        }
+    }
+    .page-template-contact-page{
+        .mainSection{
+            .contactContent{
+                @include span-columns(8);
+                @include shift(2);
+                .contactLeft{
+                    @include span-columns(2 of 8);
+                    @include shift(1 of 8);
+                    span.guy{
+                        margin-left:-12em;
+                    }
+                    span.contactPhone{
+                        padding-right:1em;
+                        margin-top:1em;
+                        
+                    }
+                    span.contactSocials{
+                        ul{
+                            padding-right:1em;
+                            
+                            li{
+                                a{
+                                    .fa{
+                                        font-size:5em;
+                                        margin-top:.3em;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        
+                    }
+                }
+                .contactForm{
+                    @include span-columns(5 of 8);
+                    clear:none;
+                    margin-right:0;
+                }
+            }//contactContent
+            .triangle{
+                @include span-columns(8);
+                @include shift(2);
+                margin-top:0;
+            }
+        }
+        
+    }
 }
 
 
@@ -507,12 +624,64 @@ and open the template in the editor.
         }
         
     }//mainSection
+    
+    #field_1_5, #field_1_1, #field_1_2, #field_1_3, #field_1_4{
+        float:right;
+    }
+    .gform_wrapper .top_label li.gfield.gf_left_half, .gform_wrapper .top_label li.gfield.gf_right_half{
+        width:48%;
+    }
+    .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit]{
+        position:relative;
+        left:22%;
+        bottom:5.2em;
+        
+    }
+    #input_1_16{
+        color:#000;
+        width:43%;
+        border:solid 2px $mob-yellow;
+        height:43px;
+        ::-webkit-input-placeholder {
+            color:#000; 
+        }
+        :-moz-placeholder {
+            opacity: 1; color:#000;
+            text-align: center;
+        } /* Firefox 18- */
+        ::-moz-placeholder {
+            opacity: 1; color:#000;
+            text-align: center;
+        } /* firefox 19+ */
+        :-ms-input-placeholder {
+            color:#000;
+            text-align: center;
+        } /* ie */
+        input:-moz-placeholder {
+            color:#000; 
+            text-align: center;
+        }
+        option{
+            text-align: center;
+        }
+    }
+    .page-template-schedule-page{
+        .scheduleContent{
+            width:75%;
+        }
+    }
     .footer{
         .lowerFooter{
             p{
                 font-size:1.5em;
                 
             }
+        }
+    }
+    .page-template-contact-page{
+        .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit]{
+            position: relative;
+            top: 1em;
         }
     }
 }
@@ -603,7 +772,7 @@ and open the template in the editor.
             }
         }
         .aboutOilDrop-2{
-            right:6%;
+            
         }
         .aboutOilDrop-3{
             top:66.5em;
@@ -618,6 +787,15 @@ and open the template in the editor.
             top:98.5em;
         }
     }//mainSection
+    .priceSection{
+        .bottomContent{
+            .rightBottom{
+                button{
+                    float:right;
+                }
+            }
+        }
+    }
 }
 
 
@@ -749,6 +927,35 @@ and open the template in the editor.
             top:105.5em;
         }
     }//mainSection
+    .priceSection{
+        min-height: 76em;
+    }
+    .page-template-price-page, .page-template-schedule-page, .page-template-template-demo, .page-template-prevent-page, .page-template-contact-page{
+        .oilDrop-1{
+            top: 20.5em;
+            
+        }
+        .oilDrop-2{
+            top: 24.5em;
+            
+        }
+        .oilDrop-3{
+            top: 33.5em;
+            
+        }
+        .oilDrop-4{
+           top: 29.5em;
+            
+        }
+        .oilDrop-5{
+            top: 54.5em;
+                       
+        }
+        .oilDrop-6{
+            top: 46.5em;
+           
+        }
+    }
     .footer{
         .upperFooter{
             margin-bottom:-1px;
@@ -756,6 +963,32 @@ and open the template in the editor.
         .lowerFooter{
             height:12em;
         }
+    }
+     .page-template-prevent-page{
+        .mainSection{
+            .subHeader{
+                @include span-columns(10);
+                @include shift(1);
+            }
+            .mainContent{
+                margin: 0px 0 10% 18%;
+                width: 70%;
+                img{
+                    width: 11em;
+                    margin-left: -6em;
+                    margin-top: -2em;
+                    
+                }
+                span{
+                    padding: 1em 1em 1em 4em; 
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+    .page-template-contact-page .mainSection .contactContent .contactLeft span.guy{
+        width:16em;
+        margin-left:-14em;
     }
 }
 
@@ -984,6 +1217,64 @@ and open the template in the editor.
             }
         }
     }//mainSection
+    .priceSection{
+        .bottomContent{
+            .leftBottom{
+                p{
+                    font-size:1.5em;
+                    letter-spacing: 2px;
+                }
+            }
+            .rightBottom{
+                padding-right:5px;
+                button{
+                    width:82%;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    .page-template-price-page, .page-template-schedule-page, .page-template-template-demo, .page-template-prevent-page, .page-template-contact-page{
+        .oilDrop-1{
+            left:5.5%;
+            top: 32.5em;
+            img{
+                width:16px;
+            }
+        }
+        .oilDrop-2{
+            right:7.5%;
+            top: 32.5em;
+            img{
+                width:16px;
+            }
+        }
+        .oilDrop-3{
+            top: 42.5em;
+            img{
+                width:16px;
+            }
+        }
+        .oilDrop-4{
+           top: 39.5em;
+           img{
+                width:16px;
+            } 
+        }
+        .oilDrop-5{
+            left:10%;
+            top: 64.5em;
+            img{
+                width:16px;
+            }           
+        }
+        .oilDrop-6{
+            top: 53.5em;
+            img{
+                width:16px;
+            }
+        }
+    }
     .page-template-about-page{
         .mainSection{
             .subHeader{
@@ -1001,6 +1292,39 @@ and open the template in the editor.
                 .footerSocials{
                     a{
                         font-size:4em;
+                    }
+                }
+            }
+        }
+    }
+    .page-template-prevent-page{
+        .mainSection{
+            
+            .mainContent{
+                margin-top:5em;
+                img{
+                    width: 15em;
+                    margin-left: -7em;
+                    margin-top: -3em;
+                    
+                }
+                span{
+                    padding: 1em 1em 1em 6em;
+                    font-size: 2.2em;
+                }
+            }
+        }
+    }
+    .page-template-contact-page {
+        .mainSection .contactContent {
+            .contactLeft {
+                span.guy{
+                    width:20em;
+                    margin-left:-19em;
+                }
+                span.contactPhone{
+                    h3{
+                        font-size:1.75em;
                     }
                 }
             }
@@ -1024,6 +1348,9 @@ and open the template in the editor.
                 top:-31em;
             }
         }
+    }//maainSection
+    .priceSection{
+        //@include outer-container;
     }
 }
 
