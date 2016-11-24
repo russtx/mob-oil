@@ -621,7 +621,7 @@ nav input[type="checkbox"]{
         }
     }
 }//priceSection
-.page-template-price-page, .page-template-schedule-page, .page-template-template-demo, .page-template-prevent-page, .page-template-contact-page{
+.page-template-price-page, .page-template-schedule-page, .page-template-template-demo, .page-template-prevent-page, .page-template-contact-page, .post-type-archive{
     .oilDrop-1{
         position: absolute;
         left: 7.5%;
@@ -791,6 +791,9 @@ nav input[type="checkbox"]{
                         div.ginput_container{
                             margin-top:-24px;
                         }
+                    }
+                    form{
+                        overflow: visible;
                     }
                 }
             }
