@@ -1,5 +1,1 @@
-.DS_Store
-# npm
-node_modules
-*.log
-*.gz
+/node_modules/
