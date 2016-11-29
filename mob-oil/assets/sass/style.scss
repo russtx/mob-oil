@@ -153,7 +153,7 @@ nav input[type="checkbox"]{
     .lowerFooter{
         @include span-columns(12);
         background:$oil-black;
-        height:12em;
+        height:17em;
         .leftFooter{
             @include span-columns(6);
             @include shift(3);
@@ -248,7 +248,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 7%;
         top: 19.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -257,7 +257,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 7%;
         top: 23em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -266,16 +266,18 @@ nav input[type="checkbox"]{
         display: block;
         position: relative;
         margin-top:1em;
-        right:8em;
+        right: 26em;
+        width: 147%;
     }
     
     .yellowBox{
         @include span-columns(9);
         @include shift(2);
+        font-family: "LeagueGothic-Regular";
         position: relative;
         background:$yellow;
-        height:10em;
-        z-index:99;
+        height:13em;
+        z-index:999;
         margin-top:-2em;
         
         img{
@@ -284,11 +286,13 @@ nav input[type="checkbox"]{
             width:40%;
             z-index: 999;
             float:left;
-            top: -4em;
+            top: 2em;
             margin-left: -5em;
         }
         p{
             padding:.5em 1em .5em 6em;
+            font-size:1.4em;
+            line-height: 1.4em;
         }
     }
     .secondLine{
@@ -303,13 +307,16 @@ nav input[type="checkbox"]{
     .yellowBox-2{
         @include span-columns(9);
         @include shift(1);
+        font-family: "LeagueGothic-Regular";
         position: relative;
         background:$yellow;
-        height:10em;
-        z-index:99;
+        height:13em;
+        z-index:999;
         margin-top:0em;
         p{
             padding:.5em 6em .5em 1em;
+            font-size:1.4em;
+            line-height: 1.4em;
         }
         img{
             display:block;
@@ -325,7 +332,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 9%;
         top: 44em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -334,7 +341,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 5%;
         top: 55.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -343,7 +350,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 3%;
         top: 67.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -360,14 +367,17 @@ nav input[type="checkbox"]{
     .yellowBox-3{
         @include span-columns(9);
         @include shift(2);
+        font-family: "LeagueGothic-Regular";
         position: relative;
         background:$yellow;
-        height:6em;
-        z-index:99;
+        height:9em;
+        z-index:999;
         
         p{
             padding:.5em 1em .5em 6em;
-            margin-top:-9em;
+            margin-top:-6em;
+            font-size:1.4em;
+            line-height: 1.4em;
         }
         img{
             display:block;
@@ -383,7 +393,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 3%;
         top: 90.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -401,14 +411,17 @@ nav input[type="checkbox"]{
     .yellowBox-4{
         @include span-columns(9);
         @include shift(1);
+        font-family: "LeagueGothic-Regular";
         position: relative;
         background:$yellow;
-        height:4em;
-        z-index:99;
+        height:7em;
+        z-index:999;
         margin-top:0em;
         p{
             padding:.5em 6em .5em 1em;
             margin-top:0em;
+            font-size:1.4em;
+            line-height: 1.4em;
         }
         img{
             display:block;
@@ -426,19 +439,24 @@ nav input[type="checkbox"]{
         top:-2em;
         left:23em;
         z-index:10;
-        
+        top: -6em;
+        left: 23em;
+        z-index: 10;
+        width: 180%;
         img{
-            width:79.88%;
+            width:100%;
         }
     }
+    
     .aboutYellowBox{
         @include span-columns(9);
         @include shift(2);
+        font-family: "LeagueGothic-Regular";
         position: relative;
         background:$yellow;
-        height:16em;
-        z-index:99;
-        margin-top:-7em;
+        height:22em;
+        z-index:999;
+        margin-top:-4em;
         img{
             display:block;
             position:relative;
@@ -450,6 +468,8 @@ nav input[type="checkbox"]{
         }
         p{
             padding:1em 1em 1.5em 1em;
+            font-size:1.4em;
+            line-height: 1.4em;
         }
     }
     .aboutSecondLine{
@@ -465,10 +485,11 @@ nav input[type="checkbox"]{
     .aboutYellowBox-2{
         @include span-columns(9);
         @include shift(1);
+        font-family: "LeagueGothic-Regular";
         position: relative;
         background:$yellow;
-        height:22em;
-        z-index:99;
+        height:27em;
+        z-index:999;
         margin-top:-2em;
         img{
             display:block;
@@ -480,7 +501,9 @@ nav input[type="checkbox"]{
             margin-left: 17em;
         }
         p{
-            padding:1em 8em 1.5em 1em;
+            padding:1em 6em 1.5em 1em;
+            font-size:1.4em;
+            line-height: 1.4em;
             
         }
     }
@@ -490,7 +513,7 @@ nav input[type="checkbox"]{
         top:-2em;
         left:9em;
         z-index:10;
-        
+        width:180%;
         img{
             width:79.88%;
         }
@@ -499,7 +522,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 5%;
         top: 27.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -508,7 +531,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 3%;
         top: 19.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -517,7 +540,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 12%;
         top: 47.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -526,7 +549,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 10%;
         top: 39.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -535,7 +558,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 3%;
         top: 82.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -544,7 +567,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 14%;
         top: 78.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -555,6 +578,10 @@ nav input[type="checkbox"]{
     @include span-columns(8);
     @include shift(2);
     font-family:"LeagueGothic-Regular";
+    .subHeader{
+        @include span-columns(8);
+        @include shift(2);
+    }
     .priceContent{
         margin-top:1em;
         height:10em;
@@ -626,7 +653,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 7.5%;
         top: 19.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -635,7 +662,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 9%;
         top: 20.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -644,7 +671,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 3%;
         top: 29.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -653,7 +680,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 6%;
         top: 25.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -662,7 +689,7 @@ nav input[type="checkbox"]{
         position: absolute;
         left: 7%;
         top: 50.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -671,7 +698,7 @@ nav input[type="checkbox"]{
         position: absolute;
         right: 3%;
         top: 42.5em;
-        z-index: 999;
+        z-index: 99;
         img{
             width:5px;
         }
@@ -850,9 +877,138 @@ input:-moz-placeholder { color:$text-red; }
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
+.oilDrop-1, .aboutOilDrop-1 {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    position: relative;
+    -webkit-animation: mymove 4s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 4; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s;
+    animation-iteration-count:infinite;
+    
+}
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
 
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+.oilDrop-2, .aboutOilDrop-2 {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    position: relative;
+    -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    animation: mymove-2 3s;
+    animation-iteration-count:infinite;
+    
+}
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove-2 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+
+@keyframes mymove-2 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+.oilDrop-3, .aboutOilDrop-3 {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    position: relative;
+    -webkit-animation: mymove 2.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 2.5; /* Safari 4.0 - 8.0 */
+    animation: mymove-3 2.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove-3 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+
+@keyframes mymove-3 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+.oilDrop-4, .aboutOilDrop-4 {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    position: relative;
+    -webkit-animation: mymove 3.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3.5; /* Safari 4.0 - 8.0 */
+    animation: mymove-4 3.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove-4 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+
+@keyframes mymove-4 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+.oilDrop-5, .aboutOilDrop-5 {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    position: relative;
+    -webkit-animation: mymove 4.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 4.5; /* Safari 4.0 - 8.0 */
+    animation: mymove-5 4.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove-5 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+
+@keyframes mymove-5 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+.oilDrop-6, .aboutOilDrop-6 {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    position: relative;
+    -webkit-animation: mymove 6.5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 6.5; /* Safari 4.0 - 8.0 */
+    animation: mymove-6 6.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove-6 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
+
+@keyframes mymove-6 {
+    from {top: 0px;}
+    to {top: 2800px;}
+}
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/

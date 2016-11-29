@@ -39,7 +39,7 @@ get_header(); ?>
                     </div>
                     
                     <div class="topLine">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rectangle-4.png" alt="rectangle-4" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rectangle-4-new.png" alt="rectangle-4" >
                     </div>
                     
                     
@@ -127,7 +127,7 @@ get_header(); ?>
                  </div>
                         
                  <div class="fifthLine">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rectangle-8.png" alt="rectangle-8" >
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rectangle-8-new.png" alt="rectangle-8" >
                 </div>       
                         
 		</section>
